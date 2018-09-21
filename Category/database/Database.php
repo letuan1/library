@@ -9,17 +9,6 @@
 class Database
 {
 
-    private $host = "localhost";
-    private $user = "root";
-    private $db = "library";
-    private $pass = "123456";
-    private $conn;
-
-    public function __construct()
-    {
-        $this->conn = new PDO("mysql:host=" . $this->host . "; dbname=" . $this->db, $this->user, $this->pass);
-    }
-
     public function getData($table)
     {
         $sql = "SELECT * FROM $table";
