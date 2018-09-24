@@ -4,7 +4,7 @@ require "../database/Category.php";
 if (isset($_GET['id'])){
     $id = $_GET['id'];
 }
-$category = new Category();
+$category = new CategoryAndStudent();
 $table = "categories";
 $currentCategory = $category->getById($table, $id);
 if ($currentCategory) {

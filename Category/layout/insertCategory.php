@@ -10,7 +10,7 @@ require "../database/Category.php";
 if (isset($_POST['name'])) {
     $name = $_POST['name'];
     header("Location: ../templateCategory.php");
-    $category = new Category();
+    $category = new CategoryAndStudent();
     $table = "categories";
     $update = $category->insert($table, $name);
 }

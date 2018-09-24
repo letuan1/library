@@ -12,7 +12,7 @@ if (isset($_GET['id'])) {
     echo $id;
 }
 
-$category = new Category();
+$category = new CategoryAndStudent();
 $table = "categories";
 $delete = $category->delete($table, $id);
 header("Location: http://localhost/PHP/libaryClass/Category/templateCategory.php")
